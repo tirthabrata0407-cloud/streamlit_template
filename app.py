@@ -50,9 +50,10 @@ if df is None:
     st.stop()
 
 # -------------------------------------------------
-# SIDEBAR
+# SIDEBAR - FIXED NAVIGATION ONLY
 # -------------------------------------------------
-menu = st.sidebar.selectbox(
+st.sidebar.title("📋 Navigation")
+menu = st.sidebar.radio(
     "Select Analysis",
     [
         "Dataset Overview",
